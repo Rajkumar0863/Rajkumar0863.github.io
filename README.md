@@ -1,118 +1,228 @@
-# Rajkumar Vijayan — Portfolio
 
-Personal portfolio website of Rajkumar Vijayan.
+# Rajkumar Vijayan — Software Engineering Portfolio
 
-I am an MSc Software Development candidate at the University of Limerick with an academic and professional background spanning Software Development, Data Science, Business Analytics and machine-learning data operations.
+Personal portfolio website of **Rajkumar Vijayan**, an MSc Software Development (International Systems) student at the University of Limerick, Ireland.
 
-## About
+**Live Portfolio:** https://rajkumar0863.github.io/
 
-My background combines technology, analytics and business.
+**Expected Graduation:** May 2027
 
-I currently study MSc Software Development (International Systems) at the University of Limerick and previously completed a PGDM in Business Analytics and a Bachelor of Computer Applications in Data Science.
+**Location:** Limerick, Ireland | Open to relocation to Dublin
 
-My professional experience includes machine-learning data operations at Amazon Development Centre and business consulting experience at VRBB Associates.
+## About Me
 
-## Featured Projects
+I am a postgraduate software development student with an academic background in computer science, data science and business analytics.
 
-### TestForge
+My engineering interests include:
 
-LLM-based automated software test generation project exploring the use of mutation testing to evaluate generated software tests.
+- C++ systems programming and concurrency
+- Data structures, algorithms and performance optimisation
+- Backend development using Java and Spring Boot
+- Software testing, debugging and reliability
+- Data engineering and analytical systems
 
-**Technologies:** Python, LLMs, Mutation Testing, Software Testing
+I enjoy building software that requires careful reasoning about correctness, efficiency and maintainability.
 
-Repository:
+## Featured Engineering Projects
 
-https://github.com/Rajkumar0863/TestForge
+### 1. InferX — Concurrent AI Inference Scheduler
 
+**Technologies:** C++20, STL, multithreading, mutexes, condition variables
 
-### CRM Sales Pipeline Analysis
+A C++20 inference scheduling project exploring how tasks can be coordinated through priority-based scheduling, dynamic batching and worker threads.
 
-Power BI business analytics project focused on sales pipeline performance, customer segmentation and conversion analysis.
+Key implementation areas:
 
-**Technologies:** Power BI, RFM Segmentation, Funnel Analysis, Business Analytics
+- Priority-based task scheduling
+- Dynamic batching
+- Worker-thread coordination
+- Mutexes and condition variables
+- Throughput measurement
+- p50, p95 and p99 latency measurement
 
-Repository:
+**Engineering focus:** Concurrency, scheduling, synchronization and performance analysis.
 
-https://github.com/Rajkumar0863/crm-sales-pipeline-analysis
+### 2. CacheForge — Thread-Safe LRU / TTL Cache
 
+**Technologies:** C++20, STL, CMake, GoogleTest
 
-### InferX
+A reusable cache library and command-line interface implementing LRU eviction and TTL expiration.
 
-C++20 inference scheduler implementing dynamic batching, priority scheduling, thread-pool execution and latency measurement.
+Key implementation areas:
 
-**Technologies:** C++20, CMake, GoogleTest
+- Hash map and linked-list data structures
+- Least-recently-used eviction
+- Time-to-live expiration
+- Synchronization for concurrent operations
+- Automated unit testing using GoogleTest
 
-Repository:
+**Repository:** https://github.com/Rajkumar0863/CacheForge
 
-https://github.com/Rajkumar0863/inferx
+**Engineering focus:** Data structures, thread safety, cache correctness and automated testing.
 
+### 3. TradeMatch Exchange — Order Matching Backend
 
-### TradeMatch Exchange
+**Technologies:** Java, Spring Boot, PostgreSQL, REST APIs
 
-Java-based exchange simulation featuring a price-time priority order book and matching engine.
+A backend application implementing order matching using price-time priority.
 
-**Technologies:** Java, OOP, Algorithms, Data Structures
+Key implementation areas:
 
-Repository:
+- Buy and sell order processing
+- Price-time priority matching logic
+- REST API endpoints
+- PostgreSQL persistence
+- CSV export
 
-https://github.com/Rajkumar0863/TradeMatchExchange
+**Engineering focus:** Backend architecture, business logic, database integration and API development.
 
+### 4. TestForge — Software Test Generation Research
 
-### ConsultLab
+**Technologies:** Java, Python, JUnit, PIT, mutation testing
 
-Consulting-oriented project focused on structured business analysis and problem solving.
+Research-oriented tooling associated with my MSc dissertation.
 
-Repository:
+The project investigates the effectiveness of large language models in automated software test generation.
 
-https://github.com/Rajkumar0863/consultlab
+The initial pilot includes:
 
+- Apache Commons Lang 3.9
+- JUnit test execution
+- PIT mutation testing
+- Mutation report generation
+- Analysis of surviving and detected mutants
 
-## Skills
+**Status:** Research and broader comparative experiments in progress.
 
-### Programming
+## MSc Dissertation
 
-Python, Java, C++, JavaScript, SQL
+**Title:** An Empirical Evaluation of Large Language Models for Automated Software Test Generation Using Mutation Testing
 
-### Data & Analytics
+**Institution:** University of Limerick
 
-Power BI, Pandas, NumPy, Scikit-learn, Microsoft Excel, Data Cleaning, Exploratory Data Analysis, RFM Segmentation, Cohort Analysis and Data Visualisation
+**Supervisor:** Tabea De Wille
 
-### Software Engineering
+**Research objectives:**
 
-Object-Oriented Programming, Software Testing, Mutation Testing, Data Structures & Algorithms, Git, GitHub, CMake and GoogleTest
+- Evaluate generated test effectiveness
+- Compare model performance under controlled conditions
+- Analyse mutation detection
+- Investigate surviving mutants
+- Improve reproducibility of experimental results
 
-### Business Analysis
+The research uses established open-source software and mutation-testing tools to support empirical evaluation.
 
-Requirements Gathering, Business Analysis, Documentation, Stakeholder Communication, Client Needs Assessment and Problem Solving
+## Technical Skills
 
-### Tools & Platforms
+| Category | Technologies |
+| --- | --- |
+| Programming | C++, Java, Python, Go, C#, JavaScript, SQL |
+| Computer Science | Data Structures, Algorithms, OOP |
+| Systems | Multithreading, Mutexes, Condition Variables, Thread Pools |
+| Backend | Spring Boot, REST APIs, PostgreSQL |
+| Testing | GoogleTest, JUnit, PIT, Mutation Testing |
+| Tools | Git, GitHub, CMake, Docker, Linux, CI/CD |
+| Cloud | Azure, AWS Foundations |
 
-Docker, Google Cloud, Streamlit and WSL
+## Professional Experience
 
+### Amazon Development Centre India
+**ML Data Associate | February 2022 – January 2023**
 
-## Built With
+- Reviewed and validated more than 100,000 data records.
+- Supported quality assurance and data consistency.
+- Contributed to workflow improvements associated with approximately 30% higher team productivity.
+
+### VRBB & Associates
+**Business Consulting Intern | May 2024 – July 2024**
+
+- Supported due-diligence reviews and business analysis.
+- Reviewed financial, contractual and incorporation information.
+- Assisted with documentation and management reporting.
+
+## Education
+
+**MSc Software Development (International Systems)**  
+University of Limerick, Ireland  
+2025 – May 2027 (Expected)
+
+**PGDM Business Analytics**  
+Thiagarajar School of Management, India  
+2023 – 2025 | First Class
+
+**BCA Data Science**  
+B.S. Abdur Rahman Crescent Institute of Science and Technology, India  
+2017 – 2020 | First Class
+
+## Portfolio Website
+
+This website is built with:
 
 - HTML5
 - CSS3
-- JavaScript
+- Vanilla JavaScript
+- GitHub Pages
 
+### Website Features
 
-## Contact
+- Responsive navigation
+- Engineering-focused landing section
+- Detailed technical project cards
+- Expandable project case studies
+- Architecture and implementation flows
+- MSc dissertation section
+- Technical skills and experience
+- Education and certifications
+- Resume and contact links
 
-### LinkedIn
+## Repository Structure
 
-https://www.linkedin.com/in/rajkumar-vijayan-0135a8338/
+```text
+Rajkumar0863.github.io/
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+├── UPDATE_NOTES.md
+└── assets/
+    └── resume/
+        ├── Rajkumar_Vijayan_Resume.pdf
+        └── Rajkumar_Vijayan_Software_Engineering_CV.pdf
+```
 
-### GitHub
+## Running Locally
 
-https://github.com/Rajkumar0863
+Clone the repository:
 
+```bash
+git clone https://github.com/Rajkumar0863/Rajkumar0863.github.io.git
+```
+
+Enter the directory:
+
+```bash
+cd Rajkumar0863.github.io
+```
+
+Open `index.html` in a browser.
+
+Alternatively, use VS Code Live Server for local preview.
 
 ## Deployment
 
-This portfolio is designed to be hosted using GitHub Pages.
+The website is hosted using GitHub Pages.
 
+Changes committed to the publishing branch are deployed through the repository's GitHub Pages workflow.
+
+**Website:** https://rajkumar0863.github.io/
+
+## Contact
+
+- **Email:** vijayanrajkumar478@gmail.com
+- **LinkedIn:** https://www.linkedin.com/in/rajkumar-vijayan-0135a8338/
+- **GitHub:** https://github.com/Rajkumar0863
+- **Portfolio:** https://rajkumar0863.github.io/
 
 ---
 
-© Rajkumar Vijayan
+© 2026 Rajkumar Vijayan
