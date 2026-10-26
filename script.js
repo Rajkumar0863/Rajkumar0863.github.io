@@ -2,59 +2,49 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Automatic footer year
-  const yearElement = document.getElementById("year");
-
-  if (yearElement) {
-    yearElement.textContent = new Date().getFullYear();
+  const year = document.getElementById("year");
+  if (year) {
+    year.textContent = new Date().getFullYear();
   }
 
-  // Mobile navigation
-  const menuToggle = document.getElementById("menuToggle");
-  const navLinks = document.getElementById("navLinks");
+  const toggle = document.getElementById("menuToggle");
+  const links = document.getElementById("navLinks");
 
-  if (menuToggle && navLinks) {
-    function setMenuState(isOpen) {
-      navLinks.classList.toggle("active", isOpen);
-      menuToggle.setAttribute("aria-expanded", String(isOpen));
-      menuToggle.setAttribute(
-        "aria-label",
-        isOpen ? "Close navigation menu" : "Open navigation menu"
-      );
-      menuToggle.textContent = isOpen ? "✕" : "☰";
+  if (!toggle || !links) return;
+
+  function setMenuOpen(open) {
+    links.classList.toggle("active", open);
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.setAttribute(
+      "aria-label",
+      open ? "Close navigation menu" : "Open navigation menu"
+    );
+    toggle.textContent = open ? "✕" : "☰";
+  }
+
+  toggle.addEventListener("click", () => {
+    setMenuOpen(!links.classList.contains("active"));
+  });
+
+  links.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => setMenuOpen(false));
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") setMenuOpen(false);
+  });
+
+  document.addEventListener("click", (event) => {
+    if (
+      links.classList.contains("active") &&
+      !links.contains(event.target) &&
+      !toggle.contains(event.target)
+    ) {
+      setMenuOpen(false);
     }
+  });
 
-    menuToggle.addEventListener("click", () => {
-      const isOpen = navLinks.classList.contains("active");
-      setMenuState(!isOpen);
-    });
-
-    navLinks.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", () => {
-        setMenuState(false);
-      });
-    });
-
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape") {
-        setMenuState(false);
-      }
-    });
-
-    document.addEventListener("click", (event) => {
-      if (
-        navLinks.classList.contains("active") &&
-        !navLinks.contains(event.target) &&
-        !menuToggle.contains(event.target)
-      ) {
-        setMenuState(false);
-      }
-    });
-
-    window.addEventListener("resize", () => {
-      if (window.innerWidth > 720) {
-        setMenuState(false);
-      }
-    });
-  }
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 720) setMenuOpen(false);
+  });
 });
