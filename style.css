@@ -1133,3 +1133,9 @@ footer {
     }
 
 }
+/* 2026 portfolio content refresh */
+.portfolio-intro { max-width: 780px; line-height: 1.75; margin: 0 0 28px; }
+.project-status { display: inline-block; margin-left: 8px; font-size: .72rem; letter-spacing: .06em; padding: 3px 8px; border: 1px solid currentColor; border-radius: 999px; vertical-align: middle; }
+#research p { max-width: 850px; line-height: 1.8; margin-bottom: 16px; }
+html { scroll-behavior: smooth; scroll-padding-top: 82px; }
+:focus-visible { outline: 3px solid #0ea5e9; outline-offset: 3px; }

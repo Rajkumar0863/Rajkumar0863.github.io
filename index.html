@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-        content="Portfolio of Rajkumar Vijayan - MSc Software Development candidate working across software engineering, data analytics, AI and business analysis.">
+        content="Rajkumar Vijayan — MSc Software Development student building C++ systems, Java backends, automated tests and data engineering projects.">
 
     <meta name="author" content="Rajkumar Vijayan">
 
     <meta name="keywords"
         content="Rajkumar Vijayan, Software Developer, Data Analytics, Artificial Intelligence, Business Analytics, University of Limerick, Portfolio">
 
-    <title>Rajkumar Vijayan | Software • Data • AI</title>
+    <title>Rajkumar Vijayan | Software Engineer & MSc Student</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -46,9 +46,10 @@
             <div class="nav-links" id="navLinks">
 
                 <a href="#about">About</a>
-                <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
                 <a href="#skills">Skills</a>
+                <a href="#research">Research</a>
+                <a href="#experience">Experience</a>
                 <a href="#education">Education</a>
                 <a href="#contact">Contact</a>
 
@@ -68,7 +69,7 @@
         <div class="container hero-content">
 
             <p class="eyebrow">
-                SOFTWARE DEVELOPMENT • DATA & ANALYTICS • AI
+                C++ SYSTEMS • BACKEND ENGINEERING • SOFTWARE QUALITY
             </p>
 
             <h1>
@@ -77,19 +78,15 @@
             </h1>
 
             <h2>
-                I build at the intersection of technology,
-                data and business.
+                I build software, explore systems,
+                and test how things work.
             </h2>
 
             <p class="hero-description">
-
-                MSc Software Development candidate at the University
-                of Limerick with a background spanning Data Science,
-                Business Analytics and Software Development.
-
-                I enjoy turning technical problems and complex data
-                into practical software and decision-oriented insights.
-
+                I'm an MSc Software Development student at the University of Limerick,
+                graduating in May 2027. I build C++ concurrency projects, Java backend
+                applications and software testing tools, with a background in data analytics.
+                Currently exploring systems engineering, data engineering and reliable software.
             </p>
 
             <div class="hero-buttons">
@@ -99,12 +96,12 @@
                 </a>
 
                 <a
-                    href="assets/resume/Rajkumar_Vijayan_Resume.pdf"
+                    href="assets/resume/Rajkumar_Vijayan_Software_Engineering_CV.pdf"
                     class="button secondary-button"
                     target="_blank"
                     rel="noopener noreferrer">
 
-                    View Resume
+                    View SWE CV
 
                 </a>
 
@@ -146,11 +143,11 @@
         <div class="container">
 
             <p class="section-label">
-                01 / ABOUT
+                ABOUT
             </p>
 
             <h2 class="section-title">
-                A multidisciplinary path into technology.
+                From data and analytics to hands-on software engineering.
             </h2>
 
             <div class="about-grid">
@@ -207,12 +204,121 @@
          EXPERIENCE
     ====================================================== -->
 
-    <section class="section alternate-section" id="experience">
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="section-label">SELECTED WORK</p>
+        <h2 class="section-title">Systems, backend and research projects.</h2>
+        <p class="portfolio-intro">A selection of work spanning concurrency, data structures, backend development, testing and analytics. Project links point to GitHub; see individual repositories for available source and documentation.</p>
+        <div class="projects-grid">
+          <article class="project-card featured-project">
+            <div class="project-number">01</div>
+            <div class="project-content">
+              <p class="project-type">SYSTEMS • C++20 • CONCURRENCY <span class="project-status">FEATURED</span></p>
+              <h3>InferX</h3>
+              <p class="project-subtitle">Concurrent inference scheduling</p>
+              <p>A C++20 inference scheduler with priority-based dispatch, dynamic batching, worker threads and condition-variable coordination. Measures throughput and p50/p95/p99 latency to study performance trade-offs.</p>
+              <div class="tags"><span>C++20</span><span>Thread Pools</span><span>Priority Queues</span><span>Latency Metrics</span></div>
+              <a href="https://github.com/Rajkumar0863/inferx" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub →</a>
+            </div>
+          </article>
+          <article class="project-card featured-project">
+            <div class="project-number">02</div>
+            <div class="project-content">
+              <p class="project-type">SYSTEMS • C++20 • DATA STRUCTURES <span class="project-status">FEATURED</span></p>
+              <h3>CacheForge</h3>
+              <p class="project-subtitle">Thread-safe LRU / TTL cache</p>
+              <p>A reusable C++20 cache library and CLI using hash maps and linked lists for LRU eviction and TTL expiry, with synchronization for concurrent access and automated GoogleTest coverage.</p>
+              <div class="tags"><span>C++20</span><span>LRU / TTL</span><span>CMake</span><span>GoogleTest</span></div>
+              <a href="https://github.com/Rajkumar0863" target="_blank" rel="noopener noreferrer" class="project-link">Explore GitHub profile →</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-number">03</div>
+            <div class="project-content">
+              <p class="project-type">BACKEND • JAVA </p>
+              <h3>TradeMatch Exchange</h3>
+              <p class="project-subtitle">Order matching backend</p>
+              <p>Java and Spring Boot backend implementing price-time priority order matching, PostgreSQL persistence, REST endpoints and CSV export.</p>
+              <div class="tags"><span>Java</span><span>Spring Boot</span><span>PostgreSQL</span><span>REST APIs</span></div>
+              <a href="https://github.com/Rajkumar0863/TradeMatchExchange" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub →</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-number">04</div>
+            <div class="project-content">
+              <p class="project-type">RESEARCH • SOFTWARE TESTING <span class="project-status">IN PROGRESS</span></p>
+              <h3>TestForge / Dissertation Pilot</h3>
+              <p class="project-subtitle">Mutation-based evaluation of generated tests</p>
+              <p>MSc dissertation research on LLM-generated software tests. The pilot uses Apache Commons Lang 3.9, JUnit and PIT mutation testing to examine test effectiveness and surviving mutants. Broader model benchmarking is ongoing.</p>
+              <div class="tags"><span>Java</span><span>Python</span><span>JUnit</span><span>PIT Mutation Testing</span></div>
+              <a href="https://github.com/Rajkumar0863/TestForge" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub →</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-number">05</div>
+            <div class="project-content">
+              <p class="project-type">DATA ENGINEERING • ANALYTICS </p>
+              <h3>CRM Sales Pipeline Analysis</h3>
+              <p class="project-subtitle">Sales pipeline and conversion analysis</p>
+              <p>Analysed approximately 8,800 opportunities using SQL and Python, cross-checking findings in Tableau to examine conversion, pipeline performance and sales patterns.</p>
+              <div class="tags"><span>SQL</span><span>Python</span><span>Tableau</span><span>Analytics</span></div>
+              <a href="https://github.com/Rajkumar0863/crm-sales-pipeline-analysis" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub →</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-number">06</div>
+            <div class="project-content">
+              <p class="project-type">PROCESS ANALYTICS </p>
+              <h3>ConsultLab</h3>
+              <p class="project-subtitle">Process mining and business workflows</p>
+              <p>Analysed approximately 1.2 million process events to investigate workflow bottlenecks and improve visibility into intake and due-diligence processes.</p>
+              <div class="tags"><span>Process Mining</span><span>Analytics</span><span>Business Processes</span></div>
+              <a href="https://github.com/Rajkumar0863/consultlab" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+<section class="section alternate-section" id="skills">
 
         <div class="container">
 
             <p class="section-label">
-                02 / EXPERIENCE
+                SKILLS
+            </p>
+
+            <h2 class="section-title">
+                Tools I work with.
+            </h2>
+
+
+            <div class="skills-grid">
+                <div class="skill-group"><h3>Programming Languages</h3><p>C++ / C++20 • Java • Python • SQL • Go • C# • JavaScript</p></div>
+                <div class="skill-group"><h3>Systems & Fundamentals</h3><p>Data Structures & Algorithms • Multithreading • Mutexes • Condition Variables • Thread Pools • Hash Maps • Linked Lists</p></div>
+                <div class="skill-group"><h3>Backend & Databases</h3><p>Spring Boot • REST APIs • PostgreSQL • Object-Oriented Programming</p></div>
+                <div class="skill-group"><h3>Testing & Engineering</h3><p>GoogleTest • JUnit • PIT Mutation Testing • CMake • Git/GitHub • CI/CD • Debugging</p></div>
+                <div class="skill-group"><h3>Platforms & Tools</h3><p>Linux / WSL • Docker • Azure • Python Data Tools • Tableau • Excel</p></div>
+                <div class="skill-group"><h3>Current Focus</h3><p>Concurrent Systems • Software Reliability • Data Engineering • LLM Test Generation</p></div>
+            </div>
+
+        </div>
+
+    </section>
+<section class="section alternate-section" id="research">
+      <div class="container">
+        <p class="section-label">RESEARCH / MSc DISSERTATION</p>
+        <h2 class="section-title">Evaluating AI-generated software tests.</h2>
+        <p><strong>An Empirical Evaluation of Large Language Models for Automated Software Test Generation Using Mutation Testing</strong></p>
+        <p>My MSc research investigates how effectively large language models generate tests for existing software, using mutation testing to assess fault detection. An initial pilot uses pre-2020 Apache Commons Lang 3.9 code with JUnit and PIT; broader controlled model comparisons are in progress.</p>
+        <div class="tags"><span>Software Testing</span><span>Mutation Testing</span><span>LLMs</span><span>JUnit</span><span>PIT</span></div>
+      </div>
+    </section>
+<section class="section alternate-section" id="experience">
+
+        <div class="container">
+
+            <p class="section-label">
+                EXPERIENCE
             </p>
 
             <h2 class="section-title">
@@ -372,415 +478,20 @@
 
     </section>
 
+    
+
 
     <!-- =====================================================
          PROJECTS
     ====================================================== -->
 
-    <section class="section" id="projects">
-
-        <div class="container">
-
-            <p class="section-label">
-                03 / SELECTED WORK
-            </p>
-
-            <h2 class="section-title">
-                Projects I've been building.
-            </h2>
-
-
-            <div class="projects-grid">
-
-
-                <!-- TESTFORGE -->
-
-                <article class="project-card featured-project">
-
-                    <div class="project-number">
-                        01
-                    </div>
-
-                    <div class="project-content">
-
-                        <p class="project-type">
-                            AI • SOFTWARE TESTING
-                        </p>
-
-                        <h3>
-                            TestForge
-                        </h3>
-
-                        <p class="project-subtitle">
-                            LLM-Based Automated Software Test Generation
-                        </p>
-
-                        <p>
-
-                            A dissertation-aligned framework exploring
-                            Large Language Models for automated software
-                            test generation and evaluating generated tests
-                            using mutation testing.
-
-                        </p>
-
-
-                        <div class="tags">
-
-                            <span>Python</span>
-                            <span>LLMs</span>
-                            <span>Mutation Testing</span>
-                            <span>Software Testing</span>
-
-                        </div>
-
-
-                        <a
-                            href="https://github.com/Rajkumar0863/TestForge"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="project-link">
-
-                            View on GitHub →
-
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-                <!-- CRM -->
-
-                <article class="project-card">
-
-                    <div class="project-number">
-                        02
-                    </div>
-
-                    <div class="project-content">
-
-                        <p class="project-type">
-                            DATA • BUSINESS ANALYTICS
-                        </p>
-
-                        <h3>
-                            CRM Sales Pipeline Analysis
-                        </h3>
-
-                        <p>
-
-                            Interactive Power BI project analysing
-                            sales pipeline performance, customer segments
-                            and conversion behaviour using business-focused
-                            KPIs and visualisations.
-
-                        </p>
-
-
-                        <div class="tags">
-
-                            <span>Power BI</span>
-                            <span>RFM</span>
-                            <span>Funnel Analysis</span>
-                            <span>Analytics</span>
-
-                        </div>
-
-
-                        <a
-                            href="https://github.com/Rajkumar0863/crm-sales-pipeline-analysis"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="project-link">
-
-                            View on GitHub →
-
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-                <!-- INFERX -->
-
-                <article class="project-card">
-
-                    <div class="project-number">
-                        03
-                    </div>
-
-                    <div class="project-content">
-
-                        <p class="project-type">
-                            SYSTEMS • SOFTWARE ENGINEERING
-                        </p>
-
-                        <h3>
-                            InferX
-                        </h3>
-
-                        <p class="project-subtitle">
-                            C++ Inference Scheduler
-                        </p>
-
-                        <p>
-
-                            C++20 inference scheduler implementing
-                            dynamic batching, priority scheduling,
-                            thread-pool execution and p50/p95/p99
-                            latency measurement.
-
-                        </p>
-
-
-                        <div class="tags">
-
-                            <span>C++20</span>
-                            <span>CMake</span>
-                            <span>GoogleTest</span>
-                            <span>Concurrency</span>
-
-                        </div>
-
-
-                        <a
-                            href="https://github.com/Rajkumar0863/inferx"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="project-link">
-
-                            View on GitHub →
-
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-                <!-- TRADEMATCH -->
-
-                <article class="project-card">
-
-                    <div class="project-number">
-                        04
-                    </div>
-
-                    <div class="project-content">
-
-                        <p class="project-type">
-                            JAVA • SOFTWARE ENGINEERING
-                        </p>
-
-                        <h3>
-                            TradeMatch Exchange
-                        </h3>
-
-                        <p>
-
-                            Java-based exchange simulation featuring
-                            a price-time priority order book, matching
-                            engine, market statistics and risk management
-                            components.
-
-                        </p>
-
-
-                        <div class="tags">
-
-                            <span>Java</span>
-                            <span>OOP</span>
-                            <span>Algorithms</span>
-                            <span>Data Structures</span>
-
-                        </div>
-
-
-                        <a
-                            href="https://github.com/Rajkumar0863/TradeMatchExchange"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="project-link">
-
-                            View on GitHub →
-
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-                <!-- CONSULTLAB -->
-
-                <article class="project-card">
-
-                    <div class="project-number">
-                        05
-                    </div>
-
-                    <div class="project-content">
-
-                        <p class="project-type">
-                            BUSINESS • CONSULTING
-                        </p>
-
-                        <h3>
-                            ConsultLab
-                        </h3>
-
-                        <p>
-
-                            A consulting-oriented project focused on
-                            structured business analysis, problem solving
-                            and translating business challenges into
-                            practical recommendations.
-
-                        </p>
-
-
-                        <div class="tags">
-
-                            <span>Business Analysis</span>
-                            <span>Consulting</span>
-                            <span>Problem Solving</span>
-
-                        </div>
-
-
-                        <a
-                            href="https://github.com/Rajkumar0863/consultlab"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="project-link">
-
-                            View on GitHub →
-
-                        </a>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </div>
-
-    </section>
-
+    
 
     <!-- =====================================================
          SKILLS
     ====================================================== -->
 
-    <section class="section alternate-section" id="skills">
-
-        <div class="container">
-
-            <p class="section-label">
-                04 / SKILLS
-            </p>
-
-            <h2 class="section-title">
-                Tools I work with.
-            </h2>
-
-
-            <div class="skills-grid">
-
-
-                <div class="skill-group">
-
-                    <h3>
-                        Programming
-                    </h3>
-
-                    <p>
-                        Python • Java • C++ • JavaScript • SQL
-                    </p>
-
-                </div>
-
-
-                <div class="skill-group">
-
-                    <h3>
-                        Data & Analytics
-                    </h3>
-
-                    <p>
-                        Power BI • Pandas • NumPy • Scikit-learn •
-                        Microsoft Excel • Data Cleaning • EDA •
-                        RFM Segmentation • Cohort Analysis •
-                        Data Visualisation
-                    </p>
-
-                </div>
-
-
-                <div class="skill-group">
-
-                    <h3>
-                        Software Engineering
-                    </h3>
-
-                    <p>
-                        OOP • Software Testing • Mutation Testing •
-                        Data Structures & Algorithms • Git • GitHub •
-                        CMake • GoogleTest
-                    </p>
-
-                </div>
-
-
-                <div class="skill-group">
-
-                    <h3>
-                        Business Analysis
-                    </h3>
-
-                    <p>
-                        Requirements Gathering • Business Analysis •
-                        Documentation • Stakeholder Communication •
-                        Client Needs Assessment • Problem Solving
-                    </p>
-
-                </div>
-
-
-                <div class="skill-group">
-
-                    <h3>
-                        Tools & Platforms
-                    </h3>
-
-                    <p>
-                        Docker • Google Cloud • Streamlit • WSL
-                    </p>
-
-                </div>
-
-
-                <div class="skill-group">
-
-                    <h3>
-                        Current Focus
-                    </h3>
-
-                    <p>
-                        LLM Applications • Automated Testing • NLP •
-                        Analytics • Software Engineering
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
+    
 
 
     <!-- =====================================================
@@ -792,7 +503,7 @@
         <div class="container">
 
             <p class="section-label">
-                05 / EDUCATION
+                EDUCATION
             </p>
 
             <h2 class="section-title">
@@ -937,7 +648,7 @@
         <div class="container">
 
             <p class="section-label">
-                06 / LEADERSHIP
+                LEADERSHIP
             </p>
 
             <h2 class="section-title">
@@ -987,11 +698,11 @@
         <div class="container">
 
             <p class="section-label">
-                07 / PROFESSIONAL DEVELOPMENT
+                PROFESSIONAL DEVELOPMENT
             </p>
 
             <h2 class="section-title">
-                Continuous learning.
+                Certifications and continued learning.
             </h2>
 
 
@@ -1002,14 +713,12 @@
                 </p>
 
                 <h3>
-                    McKinsey Forward Program
+                    Technical and Professional Certifications
                 </h3>
 
                 <p>
 
-                    Professional development training focused on
-                    structured problem solving, communication,
-                    adaptability and workplace effectiveness.
+                    Google Cybersecurity Professional Certificate • Google Data Analytics Professional Certificate • Linux Fundamentals • AWS Cloud Foundations • Rutgers Supply Chain Management Specialization • McKinsey Forward.
 
                 </p>
 
@@ -1077,7 +786,7 @@
 
 
                 <a
-                    href="assets/resume/Rajkumar_Vijayan_Resume.pdf"
+                    href="assets/resume/Rajkumar_Vijayan_Software_Engineering_CV.pdf"
                     target="_blank"
                     rel="noopener noreferrer">
 
