@@ -1,88 +1,89 @@
 
 # Rajkumar Vijayan — Software Engineering Portfolio
 
-Personal portfolio website of **Rajkumar Vijayan**, an MSc Software Development (International Systems) student at the University of Limerick, Ireland.
+Personal engineering portfolio of **Rajkumar Vijayan**, an MSc Software Development (International Systems) student at the University of Limerick, Ireland.
 
-**Live Portfolio:** https://rajkumar0863.github.io/
+**Live website:** https://rajkumar0863.github.io/
 
-**Expected Graduation:** May 2027
+**Expected graduation:** May 2027  
+**Location:** Limerick, Ireland  
+**Interests:** Systems programming, backend engineering, concurrency, software testing and data engineering
 
-**Location:** Limerick, Ireland | Open to relocation to Dublin
+## About
 
-## About Me
+I build software projects that explore correctness, performance, concurrency and reliability.
 
-I am a postgraduate software development student with an academic background in computer science, data science and business analytics.
+My background combines software development, data science, business analytics and professional experience in machine-learning data operations.
 
-My engineering interests include:
+My current technical focus includes:
 
-- C++ systems programming and concurrency
-- Data structures, algorithms and performance optimisation
-- Backend development using Java and Spring Boot
-- Software testing, debugging and reliability
-- Data engineering and analytical systems
+- C++20 systems programming
+- Data structures and algorithms
+- Multithreading and synchronization
+- Java and Spring Boot backend development
+- Automated software testing
+- Mutation-testing research
 
-I enjoy building software that requires careful reasoning about correctness, efficiency and maintainability.
+## Featured Projects
 
-## Featured Engineering Projects
+### InferX — Concurrent Inference Scheduling Simulator
 
-### 1. InferX — Concurrent AI Inference Scheduler
+**Version:** v0.8  
+**Technologies:** C++20, STL, multithreading, GoogleTest
 
-**Technologies:** C++20, STL, multithreading, mutexes, condition variables
+InferX is a C++20 scheduling simulator exploring concurrent task execution and simulated inference workloads.
 
-A C++20 inference scheduling project exploring how tasks can be coordinated through priority-based scheduling, dynamic batching and worker threads.
+Implemented components include:
 
-Key implementation areas:
-
-- Priority-based task scheduling
+- FIFO scheduling
+- Priority scheduling
 - Dynamic batching
-- Worker-thread coordination
+- Thread-safe work queue
+- Concurrent worker pool
 - Mutexes and condition variables
+- p50, p95 and p99 latency calculations
 - Throughput measurement
-- p50, p95 and p99 latency measurement
 
-**Engineering focus:** Concurrency, scheduling, synchronization and performance analysis.
+The worker pool consumes batches from a thread-safe queue and coordinates shutdown.
 
-### 2. CacheForge — Thread-Safe LRU / TTL Cache
+**Testing:** The InferX repository README reports 8/8 automated tests passing.
 
-**Technologies:** C++20, STL, CMake, GoogleTest
+**Benchmark status:** Formal benchmarking is not yet complete. The current demonstration uses simulated processing times rather than real neural-network inference.
 
-A reusable cache library and command-line interface implementing LRU eviction and TTL expiration.
+**Repository:** https://github.com/Rajkumar0863/inferx
 
-Key implementation areas:
+**Worker pool source:** https://github.com/Rajkumar0863/inferx/blob/main/src/worker_pool.cpp
 
-- Hash map and linked-list data structures
-- Least-recently-used eviction
+### CacheForge — Thread-Safe LRU / TTL Cache
+
+**Technologies:** C++20, CMake, STL, GoogleTest
+
+A reusable cache library and command-line interface implementing:
+
+- Hash map and linked-list based LRU behaviour
 - Time-to-live expiration
-- Synchronization for concurrent operations
-- Automated unit testing using GoogleTest
+- Synchronization for concurrent access
+- Automated unit testing
 
 **Repository:** https://github.com/Rajkumar0863/CacheForge
 
-**Engineering focus:** Data structures, thread safety, cache correctness and automated testing.
-
-### 3. TradeMatch Exchange — Order Matching Backend
+### TradeMatch Exchange — Order Matching Backend
 
 **Technologies:** Java, Spring Boot, PostgreSQL, REST APIs
 
-A backend application implementing order matching using price-time priority.
+A backend application implementing:
 
-Key implementation areas:
-
+- Price-time priority order matching
 - Buy and sell order processing
-- Price-time priority matching logic
 - REST API endpoints
 - PostgreSQL persistence
 - CSV export
 
-**Engineering focus:** Backend architecture, business logic, database integration and API development.
+### TestForge — Mutation-Based Test Evaluation
 
-### 4. TestForge — Software Test Generation Research
+**Technologies:** Java, Python, JUnit, PIT
 
-**Technologies:** Java, Python, JUnit, PIT, mutation testing
-
-Research-oriented tooling associated with my MSc dissertation.
-
-The project investigates the effectiveness of large language models in automated software test generation.
+Research-oriented work associated with my MSc dissertation.
 
 The initial pilot includes:
 
@@ -90,53 +91,58 @@ The initial pilot includes:
 - JUnit test execution
 - PIT mutation testing
 - Mutation report generation
-- Analysis of surviving and detected mutants
 
-**Status:** Research and broader comparative experiments in progress.
+Broader multi-model research experiments remain in progress.
+
+### Additional Projects
+
+**CRM Sales Pipeline Analysis:** SQL, Python and Tableau analysis of approximately 8,800 opportunities.
+
+**ConsultLab:** Process mining and workflow analysis involving approximately 1.2 million process events.
 
 ## MSc Dissertation
 
 **Title:** An Empirical Evaluation of Large Language Models for Automated Software Test Generation Using Mutation Testing
 
-**Institution:** University of Limerick
-
+**University:** University of Limerick  
 **Supervisor:** Tabea De Wille
 
-**Research objectives:**
+Research priorities:
 
-- Evaluate generated test effectiveness
-- Compare model performance under controlled conditions
-- Analyse mutation detection
-- Investigate surviving mutants
-- Improve reproducibility of experimental results
+- Reproducible experimental design
+- Evaluating generated test effectiveness
+- Mutation-based fault detection
+- Surviving mutant analysis
+- Controlled multi-model comparisons
 
-The research uses established open-source software and mutation-testing tools to support empirical evaluation.
+**Status:** In progress.
 
 ## Technical Skills
 
 | Category | Technologies |
 | --- | --- |
-| Programming | C++, Java, Python, Go, C#, JavaScript, SQL |
+| Languages | C++, Java, Python, SQL, C#, JavaScript |
 | Computer Science | Data Structures, Algorithms, OOP |
-| Systems | Multithreading, Mutexes, Condition Variables, Thread Pools |
+| Concurrency | Threads, Mutexes, Condition Variables, Thread Pools |
 | Backend | Spring Boot, REST APIs, PostgreSQL |
-| Testing | GoogleTest, JUnit, PIT, Mutation Testing |
-| Tools | Git, GitHub, CMake, Docker, Linux, CI/CD |
-| Cloud | Azure, AWS Foundations |
+| Testing | GoogleTest, JUnit, PIT |
+| Tools | Git, GitHub, CMake, Docker, Linux/WSL, Azure |
 
 ## Professional Experience
 
 ### Amazon Development Centre India
+
 **ML Data Associate | February 2022 – January 2023**
 
 - Reviewed and validated more than 100,000 data records.
-- Supported quality assurance and data consistency.
+- Supported data quality-control processes.
 - Contributed to workflow improvements associated with approximately 30% higher team productivity.
 
 ### VRBB & Associates
+
 **Business Consulting Intern | May 2024 – July 2024**
 
-- Supported due-diligence reviews and business analysis.
+- Supported due-diligence and business analysis.
 - Reviewed financial, contractual and incorporation information.
 - Assisted with documentation and management reporting.
 
@@ -151,29 +157,19 @@ Thiagarajar School of Management, India
 2023 – 2025 | First Class
 
 **BCA Data Science**  
-B.S. Abdur Rahman Crescent Institute of Science and Technology, India  
+B.S. Abdur Rahman Crescent Institute, India  
 2017 – 2020 | First Class
 
-## Portfolio Website
+## Portfolio Technology
 
-This website is built with:
+The website uses:
 
 - HTML5
 - CSS3
 - Vanilla JavaScript
 - GitHub Pages
 
-### Website Features
-
-- Responsive navigation
-- Engineering-focused landing section
-- Detailed technical project cards
-- Expandable project case studies
-- Architecture and implementation flows
-- MSc dissertation section
-- Technical skills and experience
-- Education and certifications
-- Resume and contact links
+It includes responsive navigation, expandable technical case studies, a source-code excerpt, project architecture flows, research details and resume links.
 
 ## Repository Structure
 
@@ -186,7 +182,6 @@ Rajkumar0863.github.io/
 ├── UPDATE_NOTES.md
 └── assets/
     └── resume/
-        ├── Rajkumar_Vijayan_Resume.pdf
         └── Rajkumar_Vijayan_Software_Engineering_CV.pdf
 ```
 
@@ -196,32 +191,25 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/Rajkumar0863/Rajkumar0863.github.io.git
-```
-
-Enter the directory:
-
-```bash
 cd Rajkumar0863.github.io
 ```
 
-Open `index.html` in a browser.
+Open `index.html` in a browser or use VS Code Live Server.
 
-Alternatively, use VS Code Live Server for local preview.
+No build process is required.
 
 ## Deployment
 
-The website is hosted using GitHub Pages.
+The portfolio is hosted using GitHub Pages.
 
-Changes committed to the publishing branch are deployed through the repository's GitHub Pages workflow.
-
-**Website:** https://rajkumar0863.github.io/
+**Live website:** https://rajkumar0863.github.io/
 
 ## Contact
 
-- **Email:** vijayanrajkumar478@gmail.com
-- **LinkedIn:** https://www.linkedin.com/in/rajkumar-vijayan-0135a8338/
-- **GitHub:** https://github.com/Rajkumar0863
-- **Portfolio:** https://rajkumar0863.github.io/
+**Email:** vijayanrajkumar478@gmail.com  
+**GitHub:** https://github.com/Rajkumar0863  
+**LinkedIn:** https://www.linkedin.com/in/rajkumar-vijayan-0135a8338/  
+**Portfolio:** https://rajkumar0863.github.io/
 
 ---
 
