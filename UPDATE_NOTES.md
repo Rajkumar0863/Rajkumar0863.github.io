@@ -1,276 +1,195 @@
 
 # Portfolio Update Notes
 
-## Project
+## October 2026 — Recruiter-Focused Engineering Upgrade
 
-**Rajkumar Vijayan — Software Engineering Portfolio**
+### Objective
 
-Repository:
-https://github.com/Rajkumar0863/Rajkumar0863.github.io
+Improve the portfolio's value to graduate software engineering recruiters and technical hiring managers by emphasizing implementation evidence, technical decision-making and project credibility.
 
-Live website:
-https://rajkumar0863.github.io/
+## Completed in This Revision
 
-## Update Overview
+### 1. Engineering-Focused Homepage
 
-This revision is designed to reposition the portfolio as an engineering-focused website for graduate and early-career software engineering opportunities.
-
-The objective is to make technical work easier for recruiters and hiring managers to evaluate.
-
-Rather than presenting only project titles and technology badges, the redesigned website explains:
-
-- What problem each project addresses
-- Which technologies and data structures were used
-- How the implementation is organised
-- How correctness and performance are evaluated
-- What engineering concepts were explored
-
-## 1. Landing Page
-
-The hero section has been redesigned to communicate:
-
-- MSc Software Development at the University of Limerick
+- Clear software engineering positioning
+- University of Limerick MSc details
 - Expected graduation in May 2027
-- Interest in systems and backend engineering
-- Experience with C++ concurrency projects
-- Software testing and performance measurement
-- Location in Limerick and openness to Dublin relocation
+- Location and relocation information
+- Engineering snapshot
+- Resume, GitHub, LinkedIn and contact links
 
-Primary navigation actions:
+### 2. Project Prioritisation
 
-- Explore Projects
-- View Resume
-- GitHub
-- LinkedIn
-- Email
+Projects appear in the following order:
 
-## 2. Engineering Evidence
+1. InferX
+2. CacheForge
+3. TradeMatch Exchange
+4. TestForge
+5. CRM Sales Pipeline Analysis
+6. ConsultLab
 
-A technical snapshot section highlights:
+Systems and backend projects are featured before supporting analytics projects.
 
-- C++20 systems programming
-- LRU and TTL caching
-- p50, p95 and p99 latency measurement
-- JUnit and PIT mutation testing
+### 3. InferX Technical Evidence
 
-These are intended as pointers to implementation evidence, not unsupported performance claims.
+Updated using the supplied InferX source archive.
 
-## 3. Project Section
+Verified implementation areas:
 
-Projects are organised to prioritise software engineering relevance.
-
-### Project 1: InferX
-
-Focus:
-
-- Concurrent scheduling
+- C++20
+- FIFO and priority scheduling
 - Dynamic batching
-- Priority queues
-- Worker threads
-- Mutexes and condition variables
-- Throughput and latency measurements
+- Thread-safe work queue
+- Concurrent worker pool
+- Latency percentile calculations
+- Throughput measurement
 
-Includes an expandable engineering case study.
+Added a code excerpt from:
 
-### Project 2: CacheForge
+`src/worker_pool.cpp`
 
-Focus:
+The excerpt demonstrates the worker loop consuming batches from the queue.
 
-- C++20 cache implementation
-- Hash maps and linked lists
-- LRU eviction
-- TTL expiration
-- Thread safety
-- GoogleTest
+Added a direct link to the source file.
 
-Confirmed repository:
-https://github.com/Rajkumar0863/CacheForge
+The repository README reports 8/8 tests passing.
 
-### Project 3: TradeMatch Exchange
+Important limitations:
 
-Focus:
+- Processing workloads are simulated.
+- Formal benchmarking is not yet completed.
+- No unverified latency or throughput numbers are displayed.
 
-- Java backend engineering
-- Spring Boot
-- REST APIs
-- Price-time priority matching
-- PostgreSQL persistence
-- CSV export
+### 4. Project Case Studies
 
-### Project 4: TestForge
+Added expandable case studies describing:
 
-Focus:
-
-- MSc dissertation research
-- JUnit
-- PIT mutation testing
-- Open-source Java code
-- Test effectiveness evaluation
-
-The research is ongoing.
-
-### Additional Projects
-
-- CRM Sales Pipeline Analysis
-- ConsultLab
-
-These demonstrate supporting experience in analytics and process improvement.
-
-## 4. MSc Research Section
-
-Added a dedicated dissertation section with:
-
-- Full dissertation title
-- Research context
-- Mutation testing methodology
-- Initial Apache Commons Lang 3.9 pilot
-- Research priorities
-- Current work-in-progress status
-
-## 5. Technical Skills
-
-Skills are grouped into:
-
-1. Programming Languages
-2. Computer Science Fundamentals
-3. Systems and Concurrency
-4. Backend Development
-5. Testing and Quality
-6. Developer Tools
-
-Skills should be kept consistent with actual implementation experience.
-
-## 6. Professional Experience
-
-Professional experience remains visible without displacing engineering projects.
-
-Included:
-
-- Amazon Development Centre India
-- VRBB & Associates
-
-Descriptions emphasise accurate responsibilities and transferable skills.
-
-## 7. Education and Development
-
-Included:
-
-- University of Limerick MSc
-- PGDM Business Analytics
-- BCA Data Science
-- Entrepreneurship Cell leadership
-- Relevant professional certifications
-
-## 8. Website Implementation
-
-Files to update:
-
-```text
-index.html
-style.css
-script.js
-README.md
-UPDATE_NOTES.md
-```
-
-Existing resume assets should remain in place.
-
-The website uses:
-
-- Semantic HTML
-- Responsive CSS
-- Vanilla JavaScript
-- Native HTML details elements for case studies
-
-No JavaScript framework or build pipeline is required.
-
-## 9. Deployment Checklist
-
-Before publishing:
-
-- [ ] Replace index.html
-- [ ] Replace style.css
-- [ ] Replace script.js
-- [ ] Replace README.md
-- [ ] Replace UPDATE_NOTES.md
-- [ ] Confirm resume PDF exists at the referenced path
-- [ ] Verify all project repository links
-- [ ] Verify LinkedIn and GitHub links
-- [ ] Preview desktop layout
-- [ ] Preview mobile layout
-- [ ] Test navigation menu
-- [ ] Test expandable case studies
-- [ ] Check spelling and technical claims
-- [ ] Commit changes to main
-- [ ] Confirm GitHub Pages deployment succeeds
-- [ ] Open the live website and verify updates
-
-## 10. Important Link Verification
-
-The CacheForge repository URL is confirmed:
-
-https://github.com/Rajkumar0863/CacheForge
-
-Other project repository URLs in the HTML should be checked before publishing.
-
-Do not replace missing project repositories with the GitHub profile or an unrelated README.
-
-If a repository is private or not yet published, use an accurate project-status label rather than a misleading link.
-
-## 11. Planned Improvements
-
-### Priority 1 — Project Evidence
-
-Add actual project evidence:
-
-- InferX benchmark results
-- CacheForge test output
-- Architecture diagrams
-- Selected code excerpts
-- Reproducible build instructions
-
-### Priority 2 — Repository Documentation
-
-Improve individual project READMEs with:
-
-- Problem statement
-- Architecture
-- Design decisions
-- Setup and build commands
-- Testing instructions
+- Engineering problems
+- Implementation approaches
+- Data structures
+- Concurrency
+- Testing
+- Research methods
 - Known limitations
-- Future improvements
 
-### Priority 3 — Technical Demonstrations
+### 5. Responsive Design
 
-Where practical, add:
+Designed layouts for:
 
-- Command-line demonstrations
-- Screenshots of test results
-- Example API requests and responses
-- Performance measurement tables
+- Desktop
+- Tablet
+- Mobile
+
+Includes:
+
+- Mobile navigation
+- Flexible project grids
+- Scrollable source-code panel
+- Responsive metrics
+- Accessible navigation labels
+- Reduced-motion support
+
+### 6. Documentation
+
+Updated:
+
+- README.md
+- UPDATE_NOTES.md
+
+## Files to Publish
+
+- [ ] index.html
+- [ ] style.css
+- [ ] script.js
+- [ ] README.md
+- [ ] UPDATE_NOTES.md
+
+Retain the existing `assets/resume/` directory.
+
+## Verification Checklist
+
+### Functionality
+
+- [ ] Homepage loads
+- [ ] Navigation works on desktop
+- [ ] Mobile menu opens and closes
+- [ ] Project case studies expand
+- [ ] InferX source link opens correctly
+- [ ] CacheForge repository link opens correctly
+- [ ] Other project repository links are verified
+- [ ] Resume PDF opens
+- [ ] LinkedIn opens
+- [ ] Email link works
+
+### Layout
+
+- [ ] Desktop layout reviewed
+- [ ] Tablet layout reviewed
+- [ ] Mobile layout reviewed
+- [ ] No horizontal overflow
+- [ ] Code panel scrolls on small screens
+- [ ] Project cards remain readable
+
+### Content
+
+- [ ] Technical claims match repositories
+- [ ] Resume matches current experience
+- [ ] Research status is accurate
+- [ ] Graduation date is correct
+- [ ] No fabricated benchmark metrics
+- [ ] No broken or misleading project links
+
+## Next Improvements
+
+### Priority 1 — InferX Benchmarking
+
+Implement and run a reproducible benchmark suite covering:
+
+- Different worker counts
+- Different batch sizes
+- Different request volumes
+- FIFO versus priority scheduling
+- p50, p95 and p99 latency
+- Throughput
+
+Publish actual results with workload and hardware details.
+
+### Priority 2 — CacheForge Evidence
+
+Add:
+
+- Actual GoogleTest output
+- Test count
+- Build instructions
+- Edge-case testing details
+- Relevant implementation excerpt
+
+### Priority 3 — Repository Documentation
+
+Improve project READMEs with:
+
+- Architecture
+- Build commands
+- Test commands
+- Design decisions
+- Limitations
+- Reproducible examples
 
 ### Priority 4 — Portfolio Maintenance
 
-- Keep the resume current
-- Update completed projects
-- Correct broken links
-- Remove outdated skills or claims
-- Check mobile usability after major changes
+- Keep resume updated
+- Check repository links
+- Update completed project milestones
+- Review mobile usability
+- Keep technical evidence verifiable
 
-## 12. Recruiter-Focused Quality Standard
+## Quality Principle
 
-The website should allow a recruiter to understand within approximately 30 seconds:
+The portfolio should demonstrate actual engineering ability, not merely claim it.
 
-1. Who Rajkumar Vijayan is
-2. Which engineering roles he is targeting
-3. What relevant software he has built
-4. Which technical concepts he has implemented
-5. Where to inspect code and testing evidence
-6. How to contact him
-
-The portfolio should prioritise accuracy, clarity and verifiable engineering evidence over exaggerated claims or visual effects.
+Prioritise accurate source evidence, reproducible results, working links and clear explanations over decorative metrics.
 
 ---
 
-Last documentation revision: October 2026
+Last revised: October 2026
