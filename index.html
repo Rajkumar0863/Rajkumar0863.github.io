@@ -1,979 +1,990 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="Rajkumar Vijayan — MSc Software Development student at the University of Limerick. Portfolio featuring C++ systems, Java backend development, automated testing and data engineering.">
-
-    <meta name="author" content="Rajkumar Vijayan">
-
-    <meta name="keywords"
-          content="Rajkumar Vijayan, Software Engineer, C++, Java, Python, Go, Concurrency, Backend Development, Data Engineering, University of Limerick">
-
-    <title>Rajkumar Vijayan | Software Engineer & MSc Student</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08111f">
+  <meta name="description" content="Rajkumar Vijayan — MSc Software Development student at the University of Limerick. C++ systems, concurrency, backend engineering and software testing portfolio.">
+  <meta name="author" content="Rajkumar Vijayan">
+  <title>Rajkumar Vijayan | Software Engineering Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- NAVIGATION -->
+  <!-- NAVIGATION -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="brand">RV<span>.</span></a>
 
-    <nav class="navbar">
-        <div class="nav-container">
+      <button class="menu-toggle" id="menuToggle"
+              aria-label="Toggle navigation"
+              aria-expanded="false"
+              aria-controls="navLinks">
+        ☰
+      </button>
 
-            <a href="#home" class="logo"
-               aria-label="Go to home">
-                RV.
-            </a>
-
-            <button class="menu-toggle"
-                    id="menuToggle"
-                    aria-label="Open navigation menu"
-                    aria-expanded="false">
-                ☰
-            </button>
-
-            <div class="nav-links" id="navLinks">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#research">Research</a>
-                <a href="#experience">Experience</a>
-                <a href="#education">Education</a>
-                <a href="#contact">Contact</a>
-            </div>
-
-        </div>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact" class="nav-contact">Contact ↗</a>
+      </div>
     </nav>
+  </header>
 
+  <main>
 
     <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-layout">
 
-    <header class="hero" id="home">
-        <div class="container hero-content">
+        <div class="hero-main">
+          <div class="availability">
+            <span class="status-dot"></span>
+            MSc Software Development · Graduating May 2027
+          </div>
 
-            <p class="eyebrow">
-                C++ SYSTEMS • BACKEND ENGINEERING • SOFTWARE QUALITY
-            </p>
+          <p class="eyebrow">SOFTWARE ENGINEERING / SYSTEMS / BACKEND</p>
 
-            <h1>
-                Hi, I'm
-                <span>Rajkumar Vijayan.</span>
-            </h1>
+          <h1>
+            Hi, I'm <span>Rajkumar Vijayan.</span>
+          </h1>
 
-            <h2>
-                I build software, explore systems,
-                and test how things work.
-            </h2>
+          <h2>
+            Building software where
+            <em>correctness meets performance.</em>
+          </h2>
 
-            <p class="hero-description">
-                I'm an MSc Software Development student at
-                the University of Limerick, graduating in
-                May 2027. I build C++ concurrency projects,
-                Java backend applications and software
-                testing tools, with a background in
-                data analytics. My interests include
-                systems engineering, data engineering
-                and reliable software.
-            </p>
+          <p class="hero-description">
+            I'm an MSc Software Development student at the
+            University of Limerick. I build concurrent C++
+            systems, Java backend applications and software
+            testing tools. I enjoy understanding how software
+            behaves under load, investigating failures and
+            improving the reliability of what I build.
+          </p>
 
-            <div class="hero-buttons">
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">
+              Explore My Work <span>↗</span>
+            </a>
 
-                <a href="#projects"
-                   class="button primary-button">
-                    View Projects
-                </a>
+            <a class="btn btn-outline"
+               href="assets/resume/Rajkumar_Vijayan_Software_Engineering_CV.pdf"
+               target="_blank" rel="noopener noreferrer">
+              View Resume <span>↗</span>
+            </a>
+          </div>
 
-                <a href="assets/resume/Rajkumar_Vijayan_Software_Engineering_CV.pdf"
-                   class="button secondary-button"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    View SWE CV
-                </a>
+          <div class="hero-socials">
+            <a href="https://github.com/Rajkumar0863"
+               target="_blank" rel="noopener noreferrer">GitHub ↗</a>
 
-            </div>
+            <a href="https://www.linkedin.com/in/rajkumar-vijayan-0135a8338/"
+               target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
 
-            <div class="social-links">
+            <a href="mailto:vijayanrajkumar478@gmail.com">
+              Email ↗
+            </a>
+          </div>
+        </div>
 
-                <a href="https://github.com/Rajkumar0863"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    GitHub ↗
-                </a>
+        <aside class="hero-panel">
+          <div class="panel-top">
+            <span class="panel-label">ENGINEERING SNAPSHOT</span>
+            <span class="panel-indicator">●</span>
+          </div>
 
-                <a href="https://www.linkedin.com/in/rajkumar-vijayan-0135a8338/"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    LinkedIn ↗
-                </a>
+          <div class="panel-item">
+            <span>01 / SYSTEMS</span>
+            <strong>C++20</strong>
+            <p>Thread pools, synchronization, priority scheduling and caching.</p>
+          </div>
 
-            </div>
+          <div class="panel-item">
+            <span>02 / PERFORMANCE</span>
+            <strong>p50 · p95 · p99</strong>
+            <p>Latency and throughput measurements in InferX.</p>
+          </div>
+
+          <div class="panel-item">
+            <span>03 / SOFTWARE QUALITY</span>
+            <strong>GoogleTest · JUnit · PIT</strong>
+            <p>Automated tests and mutation-based test evaluation.</p>
+          </div>
+
+          <div class="panel-footer">
+            <span>Based in Limerick, Ireland</span>
+            <span>Open to Dublin relocation</span>
+          </div>
+        </aside>
+      </div>
+
+      <div class="container hero-bottom">
+        <span>SCROLL TO EXPLORE</span>
+        <span>↓</span>
+      </div>
+    </section>
+
+    <!-- ENGINEERING EVIDENCE -->
+    <section class="evidence-section" id="evidence">
+      <div class="container">
+        <div class="evidence-grid">
+
+          <div class="evidence-item">
+            <strong>C++20</strong>
+            <span>Concurrent systems</span>
+          </div>
+
+          <div class="evidence-item">
+            <strong>LRU + TTL</strong>
+            <span>Cache implementation</span>
+          </div>
+
+          <div class="evidence-item">
+            <strong>p50 / p95 / p99</strong>
+            <span>Latency measurement</span>
+          </div>
+
+          <div class="evidence-item">
+            <strong>JUnit + PIT</strong>
+            <span>Mutation testing pilot</span>
+          </div>
 
         </div>
-    </header>
-
+      </div>
+    </section>
 
     <!-- ABOUT -->
-
     <section class="section" id="about">
-        <div class="container">
+      <div class="container">
 
-            <p class="section-label">ABOUT</p>
-
-            <h2 class="section-title">
-                From data and analytics to
-                hands-on software engineering.
-            </h2>
-
-            <div class="about-grid">
-
-                <div>
-                    <p>
-                        My academic journey began with a
-                        <strong>BCA in Data Science</strong>,
-                        where I developed foundations in
-                        programming, databases, statistics
-                        and data analysis.
-                    </p>
-
-                    <p>
-                        I then worked as an
-                        <strong>ML Data Associate at Amazon
-                        Development Centre India</strong>,
-                        supporting data quality in
-                        machine-learning workflows.
-                    </p>
-                </div>
-
-                <div>
-                    <p>
-                        I later completed a
-                        <strong>PGDM in Business Analytics</strong>,
-                        developing my understanding of
-                        business analysis, data-driven
-                        decisions and problem-solving.
-                    </p>
-
-                    <p>
-                        Today, I'm pursuing an
-                        <strong>MSc in Software Development
-                        (International Systems) at the
-                        University of Limerick</strong>,
-                        focusing on programming,
-                        software testing and engineering
-                        fundamentals.
-                    </p>
-                </div>
-
-            </div>
-
+        <div class="section-heading">
+          <p class="section-kicker">01 / ABOUT</p>
+          <h2>More than a list of technologies.</h2>
+          <p>
+            My work connects computer science fundamentals
+            with practical implementation, testing and
+            engineering decisions.
+          </p>
         </div>
-    </section>
 
+        <div class="about-layout">
+          <div class="about-lead">
+            <h3>
+              I want to understand not only
+              <span>how software works,</span>
+              but why it fails.
+            </h3>
+          </div>
+
+          <div class="about-copy">
+            <p>
+              My academic background began with a BCA in
+              Data Science, followed by professional
+              experience in machine-learning data operations
+              at Amazon and a PGDM in Business Analytics.
+            </p>
+
+            <p>
+              I am now pursuing an MSc in Software Development
+              (International Systems) at the University of
+              Limerick, expected to finish in May 2027.
+            </p>
+
+            <p>
+              My recent focus is hands-on software engineering:
+              implementing concurrent schedulers, building
+              thread-safe data structures, developing backend
+              applications and evaluating automated software
+              tests through mutation testing.
+            </p>
+
+            <p>
+              I'm particularly interested in systems
+              programming, backend engineering, performance
+              analysis and reliable software.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
 
     <!-- PROJECTS -->
+    <section class="section section-dark" id="projects">
+      <div class="container">
 
-    <section class="section" id="projects">
-        <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">02 / SELECTED ENGINEERING WORK</p>
+          <h2>Projects with engineering substance.</h2>
+          <p>
+            Explore what each project solves, how it works
+            and the technical decisions behind it.
+          </p>
+        </div>
 
-            <p class="section-label">SELECTED WORK</p>
+        <div class="projects-grid">
 
-            <h2 class="section-title">
-                Systems, backend and research projects.
-            </h2>
+          <!-- INFERX -->
+          <article class="project-card featured">
+            <div class="project-topline">
+              <span>01 / SYSTEMS ENGINEERING</span>
+              <span class="project-badge">FEATURED</span>
+            </div>
 
-            <p class="portfolio-intro">
-                A selection of my work spanning
-                concurrency, data structures, backend
-                development, software testing and analytics.
-                Repository links provide access to
-                available source code and documentation.
+            <h3>InferX</h3>
+            <p class="project-subtitle">
+              Concurrent AI Inference Scheduler
             </p>
 
-            <div class="projects-grid">
-
-                <!-- PROJECT 01: INFERX -->
-
-                <article class="project-card featured-project">
-
-                    <div class="project-number">01</div>
-
-                    <div class="project-content">
-
-                        <p class="project-type">
-                            SYSTEMS • C++20 • CONCURRENCY
-                            <span class="project-status">
-                                FEATURED
-                            </span>
-                        </p>
-
-                        <h3>InferX</h3>
-
-                        <p class="project-subtitle">
-                            Concurrent inference scheduling
-                        </p>
-
-                        <p>
-                            A C++20 inference scheduler
-                            implementing priority-based
-                            dispatch, dynamic batching,
-                            worker threads and condition-variable
-                            coordination. Measures throughput
-                            and p50/p95/p99 latency to study
-                            scheduling performance and trade-offs.
-                        </p>
-
-                        <div class="tags">
-                            <span>C++20</span>
-                            <span>Thread Pools</span>
-                            <span>Priority Queues</span>
-                            <span>Latency Metrics</span>
-                        </div>
-
-                        <a href="https://github.com/Rajkumar0863/inferx"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="project-link">
-                            View InferX on GitHub →
-                        </a>
-
-                    </div>
-                </article>
-
-
-                <!-- PROJECT 02: CACHEFORGE -->
-
-                <article class="project-card featured-project">
-
-                    <div class="project-number">02</div>
-
-                    <div class="project-content">
-
-                        <p class="project-type">
-                            SYSTEMS • C++20 • DATA STRUCTURES
-                            <span class="project-status">
-                                FEATURED
-                            </span>
-                        </p>
-
-                        <h3>CacheForge</h3>
-
-                        <p class="project-subtitle">
-                            Thread-safe LRU / TTL cache
-                        </p>
-
-                        <p>
-                            A reusable C++20 caching library
-                            and command-line interface using
-                            hash maps and linked lists for
-                            least-recently-used eviction
-                            and time-to-live expiration.
-                            Includes synchronization for
-                            concurrent access and automated
-                            testing with GoogleTest.
-                        </p>
-
-                        <div class="tags">
-                            <span>C++20</span>
-                            <span>LRU / TTL</span>
-                            <span>CMake</span>
-                            <span>GoogleTest</span>
-                        </div>
-
-                        <!-- VERIFIED USER-PROVIDED REPOSITORY -->
-
-                        <a href="https://github.com/Rajkumar0863/CacheForge"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="project-link">
-                            View CacheForge on GitHub →
-                        </a>
-
-                    </div>
-                </article>
-
-
-                <!-- PROJECT 03: TRADEMATCH -->
-
-                <article class="project-card">
-
-                    <div class="project-number">03</div>
-
-                    <div class="project-content">
-
-                        <p class="project-type">
-                            BACKEND • JAVA
-                        </p>
-
-                        <h3>TradeMatch Exchange</h3>
-
-                        <p class="project-subtitle">
-                            Order matching backend
-                        </p>
-
-                        <p>
-                            Java and Spring Boot backend
-                            implementing price-time priority
-                            order matching, PostgreSQL
-                            persistence, REST endpoints
-                            and CSV export.
-                        </p>
-
-                        <div class="tags">
-                            <span>Java</span>
-                            <span>Spring Boot</span>
-                            <span>PostgreSQL</span>
-                            <span>REST APIs</span>
-                        </div>
-
-                        <a href="https://github.com/Rajkumar0863/TradeMatchExchange"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="project-link">
-                            View TradeMatch on GitHub →
-                        </a>
-
-                    </div>
-                </article>
-
-
-                <!-- PROJECT 04: TESTFORGE -->
-
-                <article class="project-card">
-
-                    <div class="project-number">04</div>
-
-                    <div class="project-content">
-
-                        <p class="project-type">
-                            RESEARCH • SOFTWARE TESTING
-                            <span class="project-status">
-                                IN PROGRESS
-                            </span>
-                        </p>
-
-                        <h3>TestForge / Dissertation Pilot</h3>
-
-                        <p class="project-subtitle">
-                            Mutation-based evaluation
-                            of generated tests
-                        </p>
-
-                        <p>
-                            MSc dissertation research on
-                            LLM-generated software tests.
-                            The pilot uses Apache Commons
-                            Lang 3.9, JUnit and PIT mutation
-                            testing to evaluate test
-                            effectiveness and examine
-                            surviving mutants. Broader
-                            model benchmarking is ongoing.
-                        </p>
-
-                        <div class="tags">
-                            <span>Java</span>
-                            <span>Python</span>
-                            <span>JUnit</span>
-                            <span>PIT Mutation Testing</span>
-                        </div>
-
-                        <a href="https://github.com/Rajkumar0863/TestForge"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="project-link">
-                            View TestForge on GitHub →
-                        </a>
-
-                    </div>
-                </article>
-
-
-                <!-- PROJECT 05: CRM -->
-
-                <article class="project-card">
-
-                    <div class="project-number">05</div>
-
-                    <div class="project-content">
-
-                        <p class="project-type">
-                            DATA ENGINEERING • ANALYTICS
-                        </p>
-
-                        <h3>CRM Sales Pipeline Analysis</h3>
-
-                        <p class="project-subtitle">
-                            Sales pipeline and conversion analysis
-                        </p>
-
-                        <p>
-                            Analysed approximately 8,800
-                            sales opportunities using SQL
-                            and Python, cross-checking
-                            findings in Tableau to examine
-                            conversion, pipeline performance
-                            and sales patterns.
-                        </p>
-
-                        <div class="tags">
-                            <span>SQL</span>
-                            <span>Python</span>
-                            <span>Tableau</span>
-                            <span>Analytics</span>
-                        </div>
-
-                        <a href="https://github.com/Rajkumar0863/crm-sales-pipeline-analysis"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="project-link">
-                            View CRM Project on GitHub →
-                        </a>
-
-                    </div>
-                </article>
-
-
-                <!-- PROJECT 06: CONSULTLAB -->
-
-                <article class="project-card">
-
-                    <div class="project-number">06</div>
-
-                    <div class="project-content">
-
-                        <p class="project-type">
-                            PROCESS ANALYTICS
-                        </p>
-
-                        <h3>ConsultLab</h3>
-
-                        <p class="project-subtitle">
-                            Process mining and business workflows
-                        </p>
-
-                        <p>
-                            Analysed approximately 1.2 million
-                            process events to investigate
-                            workflow bottlenecks and improve
-                            visibility into intake and
-                            due-diligence processes.
-                        </p>
-
-                        <div class="tags">
-                            <span>Process Mining</span>
-                            <span>Analytics</span>
-                            <span>Business Processes</span>
-                        </div>
-
-                        <a href="https://github.com/Rajkumar0863/consultlab"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="project-link">
-                            View ConsultLab on GitHub →
-                        </a>
-
-                    </div>
-                </article>
-
+            <p class="project-description">
+              A C++20 inference scheduler designed to
+              coordinate tasks through priority-based
+              dispatch, dynamic batching and worker threads,
+              with latency and throughput measurement.
+            </p>
+
+            <div class="tag-list">
+              <span>C++20</span>
+              <span>Concurrency</span>
+              <span>Thread Pools</span>
+              <span>Priority Queues</span>
+              <span>Performance</span>
             </div>
-        </div>
-    </section>
 
-
-    <!-- TECHNICAL SKILLS -->
-
-    <section class="section alternate-section" id="skills">
-        <div class="container">
-
-            <p class="section-label">SKILLS</p>
-
-            <h2 class="section-title">
-                Tools I work with.
-            </h2>
-
-            <div class="skills-grid">
-
-                <div class="skill-group">
-                    <h3>Programming Languages</h3>
-                    <p>
-                        C++ / C++20 • Java • Python •
-                        SQL • Go • C# • JavaScript
-                    </p>
-                </div>
-
-                <div class="skill-group">
-                    <h3>Systems &amp; Fundamentals</h3>
-                    <p>
-                        Data Structures &amp; Algorithms •
-                        Multithreading • Mutexes •
-                        Condition Variables • Thread Pools •
-                        Hash Maps • Linked Lists
-                    </p>
-                </div>
-
-                <div class="skill-group">
-                    <h3>Backend &amp; Databases</h3>
-                    <p>
-                        Spring Boot • REST APIs •
-                        PostgreSQL • Object-Oriented
-                        Programming
-                    </p>
-                </div>
-
-                <div class="skill-group">
-                    <h3>Testing &amp; Engineering</h3>
-                    <p>
-                        GoogleTest • JUnit • PIT Mutation
-                        Testing • CMake • Git/GitHub •
-                        CI/CD • Debugging
-                    </p>
-                </div>
-
-                <div class="skill-group">
-                    <h3>Platforms &amp; Tools</h3>
-                    <p>
-                        Linux / WSL • Docker • Azure •
-                        Python Data Tools • Tableau • Excel
-                    </p>
-                </div>
-
-                <div class="skill-group">
-                    <h3>Current Focus</h3>
-                    <p>
-                        Concurrent Systems • Software
-                        Reliability • Data Engineering •
-                        LLM Test Generation
-                    </p>
-                </div>
-
+            <div class="architecture">
+              <div class="architecture-title">
+                <span>IMPLEMENTATION FLOW</span>
+                <span>01</span>
+              </div>
+              <div class="architecture-steps">
+                <span>Incoming Tasks</span>
+                <b>→</b>
+                <span>Priority Queue</span>
+                <b>→</b>
+                <span>Dynamic Batching</span>
+                <b>→</b>
+                <span>Worker Threads</span>
+              </div>
             </div>
-        </div>
-    </section>
 
+            <details class="case-study">
+              <summary>
+                Explore the engineering decisions
+                <span>+</span>
+              </summary>
+
+              <div class="case-study-content">
+                <h4>The problem</h4>
+                <p>
+                  Scheduling tasks with different priorities
+                  requires balancing responsiveness,
+                  coordination and throughput.
+                </p>
+
+                <h4>Implementation</h4>
+                <p>
+                  I implemented a priority-based scheduler
+                  with dynamic batching, worker threads,
+                  mutexes and condition variables to
+                  coordinate task execution.
+                </p>
+
+                <h4>Performance measurement</h4>
+                <p>
+                  The project tracks throughput and
+                  p50, p95 and p99 latency to examine
+                  how scheduling decisions affect
+                  observed performance.
+                </p>
+
+                <h4>Engineering takeaway</h4>
+                <p>
+                  Looking beyond average latency provides
+                  a better picture of scheduling behaviour,
+                  particularly when some tasks experience
+                  longer delays than others.
+                </p>
+              </div>
+            </details>
+
+            <a class="project-link"
+               href="https://github.com/Rajkumar0863/inferx"
+               target="_blank" rel="noopener noreferrer">
+              Explore InferX Repository <span>↗</span>
+            </a>
+          </article>
+
+          <!-- CACHEFORGE -->
+          <article class="project-card featured">
+            <div class="project-topline">
+              <span>02 / SYSTEMS ENGINEERING</span>
+              <span class="project-badge">FEATURED</span>
+            </div>
+
+            <h3>CacheForge</h3>
+            <p class="project-subtitle">
+              Thread-Safe LRU / TTL Cache
+            </p>
+
+            <p class="project-description">
+              A reusable C++20 cache library and CLI
+              implementing least-recently-used eviction,
+              time-to-live expiration and synchronization
+              for concurrent access.
+            </p>
+
+            <div class="tag-list">
+              <span>C++20</span>
+              <span>Hash Maps</span>
+              <span>Linked Lists</span>
+              <span>CMake</span>
+              <span>GoogleTest</span>
+            </div>
+
+            <div class="architecture">
+              <div class="architecture-title">
+                <span>IMPLEMENTATION FLOW</span>
+                <span>02</span>
+              </div>
+              <div class="architecture-steps">
+                <span>Cache API</span>
+                <b>→</b>
+                <span>Hash Map</span>
+                <b>↔</b>
+                <span>LRU List</span>
+                <b>+</b>
+                <span>TTL Checks</span>
+              </div>
+            </div>
+
+            <details class="case-study">
+              <summary>
+                Explore the engineering decisions
+                <span>+</span>
+              </summary>
+
+              <div class="case-study-content">
+                <h4>The problem</h4>
+                <p>
+                  A cache must support efficient lookup,
+                  predictable eviction and expiration
+                  while protecting shared state during
+                  concurrent access.
+                </p>
+
+                <h4>Data structures</h4>
+                <p>
+                  I used a hash map and linked list
+                  to implement least-recently-used
+                  cache behaviour, alongside TTL
+                  expiration checks.
+                </p>
+
+                <h4>Concurrency and testing</h4>
+                <p>
+                  Shared operations are synchronized,
+                  and GoogleTest is used to validate
+                  cache behaviour and edge cases.
+                  The implemented tests passed.
+                </p>
+
+                <h4>Engineering takeaway</h4>
+                <p>
+                  Correctness depends on both the
+                  data structures and the way
+                  concurrent operations interact
+                  with eviction and expiration.
+                </p>
+              </div>
+            </details>
+
+            <a class="project-link"
+               href="https://github.com/Rajkumar0863/CacheForge"
+               target="_blank" rel="noopener noreferrer">
+              Explore CacheForge Repository <span>↗</span>
+            </a>
+          </article>
+
+          <!-- TRADEMATCH -->
+          <article class="project-card">
+            <div class="project-topline">
+              <span>03 / BACKEND ENGINEERING</span>
+              <span class="project-badge muted">JAVA</span>
+            </div>
+
+            <h3>TradeMatch Exchange</h3>
+            <p class="project-subtitle">
+              Order Matching Backend
+            </p>
+
+            <p class="project-description">
+              A Java and Spring Boot application
+              implementing price-time priority
+              order matching, REST endpoints,
+              PostgreSQL persistence and CSV export.
+            </p>
+
+            <div class="tag-list">
+              <span>Java</span>
+              <span>Spring Boot</span>
+              <span>PostgreSQL</span>
+              <span>REST APIs</span>
+            </div>
+
+            <div class="architecture">
+              <div class="architecture-title">
+                <span>BACKEND FLOW</span>
+                <span>03</span>
+              </div>
+              <div class="architecture-steps">
+                <span>REST API</span>
+                <b>→</b>
+                <span>Matching Logic</span>
+                <b>→</b>
+                <span>PostgreSQL</span>
+              </div>
+            </div>
+
+            <details class="case-study">
+              <summary>
+                Explore the backend design
+                <span>+</span>
+              </summary>
+              <div class="case-study-content">
+                <h4>The problem</h4>
+                <p>
+                  Implement predictable buy/sell order
+                  matching based on price and time priority.
+                </p>
+                <h4>Implementation</h4>
+                <p>
+                  The project separates order-matching
+                  logic from API endpoints and database
+                  interactions, with CSV export for
+                  reviewing order activity.
+                </p>
+              </div>
+            </details>
+
+            <a class="project-link"
+               href="https://github.com/Rajkumar0863/TradeMatchExchange"
+               target="_blank" rel="noopener noreferrer">
+              Explore TradeMatch Repository <span>↗</span>
+            </a>
+          </article>
+
+          <!-- TESTFORGE -->
+          <article class="project-card">
+            <div class="project-topline">
+              <span>04 / RESEARCH & TESTING</span>
+              <span class="project-badge muted">IN PROGRESS</span>
+            </div>
+
+            <h3>TestForge</h3>
+            <p class="project-subtitle">
+              Mutation-Based Test Evaluation
+            </p>
+
+            <p class="project-description">
+              MSc dissertation work investigating
+              LLM-generated software tests using
+              mutation testing to assess whether
+              generated tests detect faults.
+            </p>
+
+            <div class="tag-list">
+              <span>Java</span>
+              <span>Python</span>
+              <span>JUnit</span>
+              <span>PIT</span>
+              <span>LLMs</span>
+            </div>
+
+            <div class="architecture">
+              <div class="architecture-title">
+                <span>RESEARCH WORKFLOW</span>
+                <span>04</span>
+              </div>
+              <div class="architecture-steps">
+                <span>Source Code</span>
+                <b>→</b>
+                <span>JUnit Tests</span>
+                <b>→</b>
+                <span>PIT Mutants</span>
+                <b>→</b>
+                <span>Analysis</span>
+              </div>
+            </div>
+
+            <details class="case-study">
+              <summary>
+                Explore the research method
+                <span>+</span>
+              </summary>
+              <div class="case-study-content">
+                <h4>Research focus</h4>
+                <p>
+                  Investigating whether automatically
+                  generated tests detect software faults
+                  rather than merely execute code.
+                </p>
+
+                <h4>Pilot implementation</h4>
+                <p>
+                  Configured Apache Commons Lang 3.9,
+                  JUnit and PIT. Executed a pilot
+                  mutation-testing run and generated
+                  reports for analysis.
+                </p>
+
+                <h4>Current status</h4>
+                <p>
+                  Broader multi-model experiments
+                  and comparative analysis are
+                  still in progress.
+                </p>
+              </div>
+            </details>
+
+            <a class="project-link"
+               href="https://github.com/Rajkumar0863/TestForge"
+               target="_blank" rel="noopener noreferrer">
+              Explore TestForge Repository <span>↗</span>
+            </a>
+          </article>
+
+          <!-- CRM -->
+          <article class="project-card secondary-project">
+            <div class="project-topline">
+              <span>05 / DATA ANALYTICS</span>
+            </div>
+
+            <h3>CRM Sales Pipeline Analysis</h3>
+            <p class="project-subtitle">
+              SQL · Python · Tableau
+            </p>
+
+            <p class="project-description">
+              Analysed approximately 8,800
+              opportunities to investigate
+              sales conversion, pipeline
+              performance and patterns,
+              cross-checking results across
+              SQL, Python and Tableau.
+            </p>
+
+            <div class="tag-list">
+              <span>SQL</span>
+              <span>Python</span>
+              <span>Tableau</span>
+            </div>
+
+            <a class="project-link"
+               href="https://github.com/Rajkumar0863/crm-sales-pipeline-analysis"
+               target="_blank" rel="noopener noreferrer">
+              View Repository <span>↗</span>
+            </a>
+          </article>
+
+          <!-- CONSULTLAB -->
+          <article class="project-card secondary-project">
+            <div class="project-topline">
+              <span>06 / PROCESS ANALYTICS</span>
+            </div>
+
+            <h3>ConsultLab</h3>
+            <p class="project-subtitle">
+              Process Mining & Workflow Analysis
+            </p>
+
+            <p class="project-description">
+              Analysed approximately 1.2 million
+              process events to investigate
+              workflow bottlenecks and improve
+              visibility into intake and
+              due-diligence processes.
+            </p>
+
+            <div class="tag-list">
+              <span>Process Mining</span>
+              <span>Analytics</span>
+              <span>Workflow Analysis</span>
+            </div>
+
+            <a class="project-link"
+               href="https://github.com/Rajkumar0863/consultlab"
+               target="_blank" rel="noopener noreferrer">
+              View Repository <span>↗</span>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
 
     <!-- RESEARCH -->
+    <section class="section" id="research">
+      <div class="container">
 
-    <section class="section alternate-section" id="research">
-        <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">03 / MSc RESEARCH</p>
+          <h2>Researching software test effectiveness.</h2>
+        </div>
 
-            <p class="section-label">
-                RESEARCH / MSc DISSERTATION
-            </p>
+        <div class="research-layout">
+          <div class="research-main">
+            <span class="small-label">DISSERTATION / IN PROGRESS</span>
 
-            <h2 class="section-title">
-                Evaluating AI-generated software tests.
-            </h2>
+            <h3>
+              An Empirical Evaluation of Large
+              Language Models for Automated
+              Software Test Generation
+              Using Mutation Testing
+            </h3>
 
             <p>
-                <strong>
-                    An Empirical Evaluation of Large Language
-                    Models for Automated Software Test
-                    Generation Using Mutation Testing
-                </strong>
+              My research examines how effectively
+              large language models generate tests
+              for existing software. Mutation testing
+              provides a way to assess whether tests
+              detect injected faults.
             </p>
 
             <p>
-                My MSc research investigates how effectively
-                large language models generate tests for
-                existing software, using mutation testing
-                to assess fault detection. An initial pilot
-                uses pre-2020 Apache Commons Lang 3.9 code
-                with JUnit and PIT. Broader controlled
-                model comparisons are in progress.
+              The initial pilot uses pre-2020
+              Apache Commons Lang 3.9 code,
+              JUnit and PIT. Broader controlled
+              model comparisons are ongoing.
             </p>
+          </div>
 
-            <div class="tags">
-                <span>Software Testing</span>
-                <span>Mutation Testing</span>
-                <span>LLMs</span>
-                <span>JUnit</span>
-                <span>PIT</span>
+          <div class="research-aside">
+            <h4>Research priorities</h4>
+            <div class="research-point">
+              <span>01</span>
+              <p>Reproducible test evaluation</p>
+            </div>
+            <div class="research-point">
+              <span>02</span>
+              <p>Mutation-based fault detection</p>
+            </div>
+            <div class="research-point">
+              <span>03</span>
+              <p>Surviving mutant analysis</p>
+            </div>
+            <div class="research-point">
+              <span>04</span>
+              <p>Controlled multi-model comparison</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section-muted" id="skills">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-kicker">04 / TECHNICAL CAPABILITIES</p>
+          <h2>My engineering toolkit.</h2>
+          <p>
+            Technologies used across coursework,
+            independent projects and research.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+
+          <div class="skill-card">
+            <div class="skill-icon">01</div>
+            <h3>Programming Languages</h3>
+            <p>C++, C++20, Java, Python, SQL, Go, C#, JavaScript</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">02</div>
+            <h3>Computer Science</h3>
+            <p>Data structures, algorithms, OOP, hash maps, linked lists, priority queues</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">03</div>
+            <h3>Systems & Concurrency</h3>
+            <p>Multithreading, mutexes, condition variables, thread pools, scheduling</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">04</div>
+            <h3>Backend Development</h3>
+            <p>Spring Boot, REST APIs, PostgreSQL, SQL, application design</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">05</div>
+            <h3>Testing & Quality</h3>
+            <p>GoogleTest, JUnit, PIT, mutation testing, debugging, automated testing</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">06</div>
+            <h3>Developer Tools</h3>
+            <p>Git, GitHub, CMake, Docker, Linux/WSL, Azure, CI/CD</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-kicker">05 / EXPERIENCE</p>
+          <h2>Professional foundations.</h2>
+        </div>
+
+        <div class="timeline">
+
+          <article class="timeline-item">
+            <div class="timeline-date">
+              FEB 2022 — JAN 2023
             </div>
 
-        </div>
-    </section>
+            <div class="timeline-content">
+              <h3>ML Data Associate</h3>
+              <p class="timeline-company">
+                Amazon Development Centre India
+              </p>
 
+              <ul>
+                <li>
+                  Validated and reviewed more than
+                  100,000 records used in machine-learning
+                  workflows.
+                </li>
+                <li>
+                  Investigated data inconsistencies
+                  and supported defined quality-control
+                  procedures.
+                </li>
+                <li>
+                  Contributed to workflow improvements
+                  associated with approximately
+                  30% higher team productivity.
+                </li>
+              </ul>
+            </div>
+          </article>
 
-    <!-- PROFESSIONAL EXPERIENCE -->
+          <article class="timeline-item">
+            <div class="timeline-date">
+              MAY 2024 — JUL 2024
+            </div>
 
-    <section class="section alternate-section" id="experience">
-        <div class="container">
+            <div class="timeline-content">
+              <h3>Business Consulting Intern</h3>
+              <p class="timeline-company">
+                VRBB & Associates
+              </p>
 
-            <p class="section-label">EXPERIENCE</p>
-
-            <h2 class="section-title">
-                Where I've worked.
-            </h2>
-
-            <!-- AMAZON -->
-
-            <article class="experience-card">
-
-                <div class="experience-header">
-
-                    <div>
-                        <h3>ML Data Associate</h3>
-                        <p class="company">
-                            Amazon Development Centre India
-                        </p>
-                    </div>
-
-                    <div class="experience-meta">
-                        <span>Chennai, India</span>
-                        <span>Feb 2022 — Jan 2023</span>
-                    </div>
-
-                </div>
-
-                <ul>
-                    <li>
-                        Analysed and curated more than
-                        <strong>100,000 data records</strong>
-                        used in machine-learning workflows
-                        against defined quality and
-                        accuracy standards.
-                    </li>
-
-                    <li>
-                        Performed data validation and
-                        quality checks to identify
-                        inconsistencies and improve
-                        downstream dataset reliability.
-                    </li>
-
-                    <li>
-                        Investigated data issues using
-                        structured analytical approaches
-                        while meeting productivity and
-                        accuracy targets.
-                    </li>
-
-                    <li>
-                        Collaborated with the data
-                        operations team and contributed
-                        to process improvements associated
-                        with a
-                        <strong>30% increase in team
-                        productivity.</strong>
-                    </li>
-                </ul>
-
-            </article>
-
-
-            <!-- VRBB -->
-
-            <article class="experience-card">
-
-                <div class="experience-header">
-
-                    <div>
-                        <h3>Business Consulting Intern</h3>
-                        <p class="company">
-                            VRBB &amp; Associates
-                        </p>
-                    </div>
-
-                    <div class="experience-meta">
-                        <span>India</span>
-                        <span>May 2024 — Jul 2024</span>
-                    </div>
-
-                </div>
-
-                <ul>
-                    <li>
-                        Supported requirements gathering
-                        and analysis of client business
-                        needs across consulting assignments.
-                    </li>
-
-                    <li>
-                        Organised findings and documentation
-                        to communicate business requirements
-                        during project discussions.
-                    </li>
-
-                    <li>
-                        Reviewed business information and
-                        supported the development of
-                        practical recommendations.
-                    </li>
-                </ul>
-
-            </article>
+              <ul>
+                <li>
+                  Reviewed business, financial,
+                  incorporation and contractual
+                  information for due-diligence work.
+                </li>
+                <li>
+                  Supported requirements analysis,
+                  documentation and management reporting.
+                </li>
+              </ul>
+            </div>
+          </article>
 
         </div>
+      </div>
     </section>
-
 
     <!-- EDUCATION -->
+    <section class="section section-muted" id="education">
+      <div class="container">
 
-    <section class="section" id="education">
-        <div class="container">
-
-            <p class="section-label">EDUCATION</p>
-
-            <h2 class="section-title">
-                Academic background.
-            </h2>
-
-            <div class="education-list">
-
-                <!-- UNIVERSITY OF LIMERICK -->
-
-                <article class="education-item">
-
-                    <div>
-                        <p class="education-year">
-                            2025 — 2027
-                        </p>
-                    </div>
-
-                    <div>
-                        <h3>
-                            MSc Software Development
-                            (International Systems)
-                        </h3>
-
-                        <p>
-                            University of Limerick • Ireland
-                        </p>
-
-                        <p class="education-description">
-                            Current study includes Software
-                            Testing &amp; Inspection,
-                            Text Analytics &amp; Natural
-                            Language Processing,
-                            Data Structures &amp; Algorithms
-                            and Software Development.
-                        </p>
-
-                        <p class="education-description">
-                            <strong>Dissertation:</strong>
-                            An Empirical Evaluation of
-                            Large Language Models for
-                            Automated Software Test Generation
-                            Using Mutation Testing.
-                        </p>
-                    </div>
-
-                </article>
-
-
-                <!-- PGDM -->
-
-                <article class="education-item">
-
-                    <div>
-                        <p class="education-year">
-                            2023 — 2025
-                        </p>
-                    </div>
-
-                    <div>
-                        <h3>
-                            PGDM — Business Analytics
-                        </h3>
-
-                        <p>
-                            Thiagarajar School of Management
-                            • India
-                        </p>
-
-                        <p class="education-description">
-                            Business analytics,
-                            data-driven decision-making,
-                            requirements analysis and
-                            stakeholder-focused problem-solving.
-                        </p>
-                    </div>
-
-                </article>
-
-
-                <!-- BCA -->
-
-                <article class="education-item">
-
-                    <div>
-                        <p class="education-year">
-                            2017 — 2020
-                        </p>
-                    </div>
-
-                    <div>
-                        <h3>
-                            Bachelor of Computer Applications
-                            — Data Science
-                        </h3>
-
-                        <p>
-                            B.S. Abdur Rahman Crescent
-                            Institute of Science and
-                            Technology • India
-                        </p>
-                    </div>
-
-                </article>
-
-            </div>
+        <div class="section-heading">
+          <p class="section-kicker">06 / EDUCATION</p>
+          <h2>Academic background.</h2>
         </div>
-    </section>
 
+        <div class="education-grid">
 
-    <!-- LEADERSHIP -->
-
-    <section class="section alternate-section">
-        <div class="container">
-
-            <p class="section-label">LEADERSHIP</p>
-
-            <h2 class="section-title">
-                Beyond the code.
-            </h2>
-
-            <article class="leadership-card">
-
-                <h3>Entrepreneurship Cell</h3>
-
-                <p class="company">
-                    Thiagarajar School of Management
-                </p>
-
-                <p>
-                    Core Committee Member — IT &amp; Promotions
-                    • 2023–2025
-                </p>
-
-                <p>
-                    Helped organise entrepreneurship
-                    and business events involving more
-                    than <strong>1,000 attendees</strong>
-                    and coordinated approximately
-                    <strong>15–20 sponsorships</strong>
-                    with external stakeholders and
-                    student teams.
-                </p>
-
-            </article>
-        </div>
-    </section>
-
-
-    <!-- CERTIFICATIONS -->
-
-    <section class="section">
-        <div class="container">
-
-            <p class="section-label">
-                PROFESSIONAL DEVELOPMENT
+          <article class="education-card">
+            <span class="education-year">2025 — MAY 2027</span>
+            <h3>MSc Software Development</h3>
+            <p class="education-specialism">
+              International Systems
             </p>
+            <p class="education-institution">
+              University of Limerick, Ireland
+            </p>
+            <p>
+              Software testing, algorithms,
+              programming and dissertation
+              research into automated
+              software test generation.
+            </p>
+            <span class="education-status">
+              IN PROGRESS
+            </span>
+          </article>
 
-            <h2 class="section-title">
-                Certifications and continued learning.
-            </h2>
+          <article class="education-card">
+            <span class="education-year">2023 — 2025</span>
+            <h3>PGDM Business Analytics</h3>
+            <p class="education-institution">
+              Thiagarajar School of Management, India
+            </p>
+            <p>
+              Analytics, business problem-solving,
+              requirements analysis and
+              data-driven decision-making.
+            </p>
+            <span class="education-status">
+              FIRST CLASS
+            </span>
+          </article>
 
-            <article class="development-card">
+          <article class="education-card">
+            <span class="education-year">2017 — 2020</span>
+            <h3>BCA Data Science</h3>
+            <p class="education-institution">
+              B.S. Abdur Rahman Crescent Institute
+              of Science and Technology, India
+            </p>
+            <p>
+              Programming, databases,
+              data analysis and computing
+              fundamentals.
+            </p>
+            <span class="education-status">
+              FIRST CLASS
+            </span>
+          </article>
 
-                <p class="development-status">
-                    COMPLETED
-                </p>
-
-                <h3>
-                    Technical and Professional Certifications
-                </h3>
-
-                <p>
-                    Google Cybersecurity Professional
-                    Certificate • Google Data Analytics
-                    Professional Certificate •
-                    Linux Fundamentals • AWS Cloud
-                    Foundations • Rutgers Supply Chain
-                    Management Specialization •
-                    McKinsey Forward.
-                </p>
-
-            </article>
         </div>
+      </div>
     </section>
 
+    <!-- LEADERSHIP AND CERTIFICATIONS -->
+    <section class="section" id="development">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-kicker">07 / BEYOND THE CODE</p>
+          <h2>Leadership and continued learning.</h2>
+        </div>
+
+        <div class="development-grid">
+
+          <div class="development-card">
+            <span class="small-label">LEADERSHIP</span>
+            <h3>Entrepreneurship Cell</h3>
+            <p class="timeline-company">
+              Thiagarajar School of Management · 2023–2025
+            </p>
+            <p>
+              Core Committee Member supporting
+              IT, promotions and sponsorships.
+              Coordinated approximately 15–20
+              sponsors and contributed to
+              events attended by more than
+              1,000 people.
+            </p>
+          </div>
+
+          <div class="development-card">
+            <span class="small-label">CERTIFICATIONS</span>
+            <h3>Professional Development</h3>
+            <ul class="cert-list">
+              <li>Google Cybersecurity Professional Certificate</li>
+              <li>Google Data Analytics Professional Certificate</li>
+              <li>Linux Fundamentals</li>
+              <li>AWS Cloud Foundations</li>
+              <li>Rutgers Supply Chain Management Specialization</li>
+              <li>McKinsey Forward</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
     <!-- CONTACT -->
-
     <section class="contact-section" id="contact">
-        <div class="container contact-content">
+      <div class="container contact-layout">
 
-            <p class="section-label">
-                CONTACT
-            </p>
+        <div>
+          <p class="section-kicker">08 / CONTACT</p>
+          <h2>
+            Interested in what
+            I could build next?
+          </h2>
 
-            <h2>
-                Let's build something useful.
-            </h2>
+          <p>
+            I'm exploring graduate and early-career
+            opportunities in software engineering,
+            systems programming, backend development
+            and data engineering.
+          </p>
 
-            <p>
-                I'm interested in graduate and
-                early-career opportunities in
-                software engineering, backend
-                development, systems programming
-                and data engineering.
-            </p>
-
-            <a href="mailto:vijayanrajkumar478@gmail.com"
-               class="contact-email">
-                vijayanrajkumar478@gmail.com
-            </a>
-
-            <div class="contact-links">
-
-                <a href="https://www.linkedin.com/in/rajkumar-vijayan-0135a8338/"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    LinkedIn ↗
-                </a>
-
-                <a href="https://github.com/Rajkumar0863"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    GitHub ↗
-                </a>
-
-                <a href="assets/resume/Rajkumar_Vijayan_Software_Engineering_CV.pdf"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Resume ↗
-                </a>
-
-            </div>
+          <p class="contact-location">
+            Limerick, Ireland · Open to relocating to Dublin
+          </p>
         </div>
+
+        <div class="contact-actions">
+          <a class="contact-email"
+             href="mailto:vijayanrajkumar478@gmail.com">
+            Let's connect <span>↗</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/rajkumar-vijayan-0135a8338/"
+             target="_blank" rel="noopener noreferrer">
+            LinkedIn <span>↗</span>
+          </a>
+
+          <a href="https://github.com/Rajkumar0863"
+             target="_blank" rel="noopener noreferrer">
+            GitHub <span>↗</span>
+          </a>
+
+          <a href="assets/resume/Rajkumar_Vijayan_Software_Engineering_CV.pdf"
+             target="_blank" rel="noopener noreferrer">
+            Download CV <span>↗</span>
+          </a>
+        </div>
+
+      </div>
     </section>
 
+  </main>
 
-    <!-- FOOTER -->
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year">2026</span> Rajkumar Vijayan</span>
+      <span>Designed and built for the web.</span>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
 
-    <footer>
-        <div class="container footer-content">
-
-            <p>
-                © <span id="year"></span>
-                Rajkumar Vijayan
-            </p>
-
-            <a href="#home">
-                Back to top ↑
-            </a>
-
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
